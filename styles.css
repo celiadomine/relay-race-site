@@ -1,6 +1,6 @@
 /* Universal font family set to Poppins for all text elements */
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #000;
 }
 
@@ -15,6 +15,7 @@ body {
     margin-top: 40px;
     margin-bottom: 20px;
     font-weight: bold;
+    grid-column: 1;
 }
 
 .subtitles2 {
@@ -31,7 +32,7 @@ body {
     width: 100%;
     background-color: #eee;
     margin-top: 5px;
-    z-index: 1000;  /* High z-index to stay on top */
+    z-index: 1000; /* High z-index to stay on top */
 }
 
 /* Styling for links within the navigation bar */
@@ -45,17 +46,43 @@ body {
 }
 
 /* Styling for links on hover and the selected link */
-.navbar a:hover, .navbar a.navbar-selected {
+.navbar a:hover,
+.navbar a.navbar-selected {
     background-color: #ddd;
     color: #000;
 }
 
-.description { /* description of the relay run */
-    width: 50%;
+.description {
+    /* description of the relay run */
     text-align: left;
-    justify-content: left;
-    align-items: left;
-    margin: 20px;
+    margin: 20px 200px;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates three columns */
+    grid-template-rows: auto auto; /* Creates two rows */
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-column: 1 / 4; /* Spans all three columns */
+    grid-row: 1; /* Occupies the first row */
+    grid-template-columns: 1fr 2fr; /* Two columns: one for the subtitles and text, another for the image */
+    column-gap: 40px;
+}
+
+.text {
+    grid-column: 1; /* These elements stay in the first column of the content area */
+}
+
+.image {
+    grid-column: 2; /* The image takes the second column of the content area */
+    width: 50%;
+    height: auto;
+    align-items: end;
+    border-radius: 10px;
+}
+
+.parcours {
+    text-align: center;
 }
 
 .parcours-container {
@@ -69,12 +96,18 @@ body {
     margin: 10px; /* space between the children */
 }
 
+.parcours-description {
+    /* pour le site parcours.html*/
+    text-align: left;
+}
+
 .informations {
     text-align: left;
 }
 
 /* General button styling */
-.btn, .btn-inscriptions {
+.btn,
+.btn-inscriptions {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
@@ -88,6 +121,44 @@ body {
 /* Specific styling for registration buttons */
 .btn-inscriptions {
     background-color: #ee173f; /* A different color for registration-specific buttons */
+    grid-row: 3; /* This ensures the button is positioned in the second row */
+    grid-column: 1; /* Button spans all columns below the text and title */
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 @media (max-width: 768px) {

@@ -16,6 +16,31 @@
         <a href="photos.html">Photos</a>
         <a href="sponsors.html">Sponsors</a>
     </div>
-    <h1>HOI</h1>
+    
+<h1>Relay Run Registration Form</h1>
+
+<form action="/submit-your-registration" method="post">
+    <div class="input-group">
+        <label for="firstName">Nom et prénom:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="input-group">
+        <label for="email">Adresse mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="input-group">
+        <label for="phone">Numéro de téléphone:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="input-group">
+        <label for="category">Parcours:</label>
+        <select id="category" name="category" required>
+            <option value="">Please select</option>
+            <option value="men">Parcours enfant</option>
+            <option value="women">Parcours Adulte</option>
+        </select>
+    </div>
+    <input type="submit" value="Register">
+</form>
 </body>
 </html>
