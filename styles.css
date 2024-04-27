@@ -80,23 +80,19 @@ body {
 .description {
     text-align: left;
     margin: 20px 200px;
-}
-
-.content {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Two columns: one for the subtitles and text, another for the image */
-    column-gap: 40px;
-}
-
-.text {
-    grid-column: 1; /* These elements stay in the first column of the content area */
+    grid-template-columns: 1fr 1fr; /* Two columns: first is narrower, second is wider */
+    grid-template-rows: repeat(3, auto); /* Three rows of equal height */
+    column-gap: 40px; /* Space between grid items */
 }
 
 .image {
-    grid-column: 2; /* The image takes the second column of the content area */
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    grid-column: 2 / 3; /* Starts at the second column and spans to the end of it */
+    grid-row: 1 / 4; /* Spans all three rows */
+    margin-top: 40px;
 }
 
 .background-image {

@@ -15,10 +15,10 @@ document.getElementById('registrationForm').onsubmit = function(event) {
     .then(data => {
         if (data.ok) {
             document.getElementById('responseMessage').style.display = 'block';
-            document.getElementById('responseMessage').innerHTML = 'Thank you for your registration!';
+            document.getElementById('responseMessage').innerHTML = 'Merci pour votre inscription!';
             form.reset(); // Reset all form fields
         } else {
-            document.getElementById('responseMessage').innerHTML = 'Oops! There was a problem with your submission.';
+            document.getElementById('responseMessage').innerHTML = 'Ouups! Il y a eu un problème avec votre inscription.';
             document.getElementById('responseMessage').style.display = 'block';
         }
     })
