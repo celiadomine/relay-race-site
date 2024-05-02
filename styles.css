@@ -44,13 +44,12 @@ body {
     left: 0;
     width: 100%;
     background-color: #eee;
-    /* padding: 14px 20px; Adjust padding as needed */
     z-index: 1000; /* High z-index to stay on top */
     box-sizing: border-box; /* Ensures padding is included in width */
 }
 
 /* Styling for links within the navigation bar */
-.navbar a {
+.navbar a, .logo {
     float: left;
     display: block;
     color: #000;
@@ -67,6 +66,10 @@ body {
     color: #000;
 }
 
+.logo {
+    width: 50px;
+}
+
 .title-page {
     position: absolute;
     top: 50%; /* Center vertically */
@@ -76,10 +79,9 @@ body {
     z-index: 10; /* Ensure it's above the image */
 }
 
-
 .description {
     text-align: left;
-    margin: 20px 200px;
+    margin: 0 80px;;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns: first is narrower, second is wider */
     grid-template-rows: repeat(3, auto); /* Three rows of equal height */
@@ -119,10 +121,11 @@ body {
 
 .parcours {
     text-align: center;
+    margin: 0 80px;
 }
 
 .parcours-box {
-    background-color: rgb(245, 135, 135);
+    background-color: #eee;
     padding: 15px; 
     border-radius: 10px;
 }
@@ -149,7 +152,7 @@ body {
 
 .btn-start {
     margin-top: 30px !important;
-    color: white !important;
+    color: #fff !important;
 }
 
 /* General button styling */
@@ -166,13 +169,19 @@ body {
     }
 }
 
-.btn-inscriptions, .btn-informations, .btn-parcours {
+.btn-inscriptions, .btn-parcours {
     background-color: #f55;
-    color: #eee;
+    color: #fff;
+}
+
+.btn-informations {
+    margin-top: 50px;
+    background-color: #f55;
+    color: #fff;
 }
 
 form {
-    background: #eee;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
     text-align: left;
@@ -195,7 +204,7 @@ input[type="text"], input[type="email"], input[type="tel"], select {
 
 input[type="submit"] {
     background-color: #007bff;
-    color: white;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
