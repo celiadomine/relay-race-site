@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-    font-size: 62px;
+    font-size: 71px;
     margin: 0;
     color: white; 
 }
@@ -37,7 +37,7 @@ body {
     font-weight: bold;
 }
 
-/* Base styling for the navigation bar */
+/* navbar styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -60,10 +60,52 @@ body {
 
 /* Styling for links on hover and the selected link */
 .navbar a:hover,
-.navbar a.navbar-selected {
+.navbar a.navbar-selected,
+.dropdown:hover .dropbtn {
     padding: 14px 20px;
     background-color: #ddd;
     color: #000;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .logo {
@@ -81,7 +123,7 @@ body {
 
 .description {
     text-align: left;
-    margin: 0 80px;;
+    margin: 0 80px;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns: first is narrower, second is wider */
     grid-template-rows: repeat(3, auto); /* Three rows of equal height */
@@ -143,6 +185,7 @@ body {
 
 .parcours-description {
     text-align: left;
+    margin: 80px;
 }
 
 .informations, form {
@@ -185,6 +228,19 @@ form {
     padding: 20px;
     border-radius: 8px;
     text-align: left;
+}
+
+.card {
+    height: 400px;
+    width: 400px;
+    margin: 40px;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.08);
 }
 
 .input-group {
