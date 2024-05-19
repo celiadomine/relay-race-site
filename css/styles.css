@@ -122,6 +122,11 @@ nav a.navbar-selected,
   display: block;
 }
 
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     width: 50px;
 }
