@@ -22,6 +22,20 @@ body {
     padding-top: 0; /* Aligns content right to the top */
 }
 
+.card {
+    height: auto;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.strong {
+    font-weight: bold;
+}
+
 /* Styling for subtitles */
 .subtitles {
     font-size: 30px;
@@ -49,7 +63,7 @@ nav {
 }
 
 /* Styling for links within the navigation bar */
-nav a, .logo {
+nav a {
     float: left;
     display: block;
     color: #000;
@@ -123,16 +137,16 @@ nav a.navbar-selected,
 
 .description {
     text-align: left;
-    margin: 0 80px;
+    margin: 40px 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: first is narrower, second is wider */
-    grid-template-rows: repeat(3, auto); /* Three rows of equal height */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto); /* Three rows of equal height */
     column-gap: 40px; /* Space between grid items */
 }
 
 .image {
     width: 100%;
-    height: auto;
+    height: 400px;
     border-radius: 10px;
     grid-column: 2 / 3; /* Starts at the second column and spans to the end of it */
     grid-row: 1 / 4; /* Spans all three rows */
@@ -150,16 +164,6 @@ nav a.navbar-selected,
     height: auto;
     display: block;
 }
-/* 
-.background-image::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-} */
 
 .parcours {
     text-align: center;
@@ -206,22 +210,50 @@ nav a.navbar-selected,
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-
-    &:hover {
-        background-color: #ff6c11;
-    }
 }
 
 .btn-inscriptions, .btn-parcours {
     background-color: #ff914d;
     color: #fff;
     max-height: 25px;
+    
+    &:hover {
+        background-color: #ff6c11;
+    }
 }
 
 .btn-informations {
-    margin-top: 50px;
-    background-color: #f55;
-    color: #fff;
+    background-color:#9bfab3;
+    color: #000;
+    max-height: 25px;
+
+    &:hover {
+        background-color: #49c869;
+    }
+}
+
+.infos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 150px 5px;
+}
+
+.infos-card {
+    width: 100%;
+    margin: 10px;
+}
+
+.organisatrices-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.organisatrices-card {
+    margin: 40px;
+    width: auto;
 }
 
 form {
@@ -229,18 +261,6 @@ form {
     padding: 20px;
     border-radius: 8px;
     text-align: left;
-}
-
-.card {
-    height: 400px;
-    width: 400px;
-    margin: 40px;
-    padding: 15px;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: #eee;
 }
 
 .input-group {
@@ -273,10 +293,18 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-    .parcours-container {
+    .parcours-container, .infos-container, .organisatrices-container {
         flex-direction: column;
+        margin: 10px;
     }
-    h2{
+
+    .description {
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+        gap: 5px; /* Space between flex items */
+    }
+
+    h2 {
         font-size: 26px;
     }
 }
