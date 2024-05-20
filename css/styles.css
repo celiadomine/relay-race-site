@@ -57,7 +57,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #eee;
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 0) 100%);
+    backdrop-filter: 10px;
     z-index: 1000; /* High z-index to stay on top */
     box-sizing: border-box; /* Ensures padding is included in width */
 }
@@ -70,6 +71,11 @@ nav a {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    margin-top: 15px;
+}
+
+nav a:first-of-type {
+    margin: 0
 }
 
 /* Styling for links on hover and the selected link */
@@ -77,14 +83,15 @@ nav a:hover,
 nav a.navbar-selected,
 .dropdown:hover .dropbtn {
     padding: 14px 20px;
-    background-color: #ddd;
     color: #000;
+    font-weight: bold;
 }
 
 
 .dropdown {
     float: left;
     overflow: hidden;
+    margin-top: 15px;
 }
 
 .dropdown .dropbtn {
@@ -128,7 +135,18 @@ nav a.navbar-selected,
 }
 
 .logo {
-    width: 50px;
+    width: 170px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 .title-page {
@@ -167,18 +185,15 @@ nav a.navbar-selected,
 .background-image img {
     width: 100%;
     height: auto;
-    display: block;
+}
+.programme {
+    text-align: left;
+    margin: 40px 160px;
 }
 
 .parcours {
-    text-align: center;
+    text-align: left;
     margin: 0 80px;
-}
-
-.parcours-box {
-    background-color: #eee;
-    padding: 15px; 
-    border-radius: 10px;
 }
 
 .parcours-container {
