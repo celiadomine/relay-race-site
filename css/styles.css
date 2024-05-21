@@ -65,17 +65,18 @@ nav {
 
 /* Styling for links within the navigation bar */
 nav a {
-    float: left;
+    float: right;
     display: block;
     color: #000;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    margin-top: 15px;
+    margin: 15px 15px 0 0 ;
 }
 
 nav a:first-of-type {
-    margin: 0
+    margin: 0;
+    float: left;
 }
 
 /* Styling for links on hover and the selected link */
@@ -89,9 +90,9 @@ nav a.navbar-selected,
 
 
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
-    margin-top: 15px;
+    margin: 15px 15px 0 0 ;
 }
 
 .dropdown .dropbtn {
@@ -186,6 +187,11 @@ td, th {
     width: 100%;
     height: auto;
 }
+
+.message {
+    margin-top: 100px;
+}
+
 .programme {
     text-align: left;
     margin: 40px 160px;
@@ -252,6 +258,17 @@ td, th {
     }
 }
 
+.btn-benevoles {
+    background-color: #ff914d; 
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px 0 #e6e6e6;
+    &:hover {
+        background-color: #ff6c11;
+    }
+}
+
 .infos-container {
     display: flex;
     flex-direction: row;
@@ -313,6 +330,21 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav a, .dropdown {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar-logo {
+        align-items: left;
+    }
+
     .parcours-container, .infos-container, .organisatrices-container {
         flex-direction: column;
         margin: 10px;
