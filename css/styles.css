@@ -1,19 +1,42 @@
+:root {
+    --text-color: #000;
+    --card-background-color: #eee;
+    --border-table-color: #ddd;
+    --dd-background-color:#ddd;
+    --dd-background-hover-color: #f9f9f9;
+    --btn1-background-color: #ff914d;
+    --btn1-background-hover-color: #ff6c11;
+    --btn1-color: #fff;
+    --btn2-background-color: #9bfab3;
+    --btn2-background-hover-color: #49c869;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #000;
+        --card-background-color: #eee;
+        --border-table-color: #ddd;
+        --dd-background-color:#ddd;
+        --dd-background-hover-color: #f9f9f9;
+        --btn1-background-color: #ff914d;
+        --btn1-background-hover-color: #ff6c11;
+        --btn1-color: #fff;
+        --btn2-background-color: #9bfab3;
+        --btn2-background-hover-color: #49c869;
+    }
+} */
+
 /* Universal font family set to Poppins for all text elements */
 * {
-    font-family: "Poppins", sans-serif;
-    color: #000;
+    font-family: "Poppins", "Helvetica", sans-serif;
+    color: var(--text-color);
     padding: 0; /* Ensures there are no default paddings */
+    background-color: var(--background-color);
 }
 
 h1 {
     margin-top: 90px;
     font-size: 62px;
-}
-
-h2 {
-    font-size: 71px;
-    margin: 0;
-    color: white; 
 }
 
 body {
@@ -29,7 +52,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     border-radius: 10px;
-    background-color: #eee;
+    background-color: var(--card-background-color);
 }
 
 .strong {
@@ -67,14 +90,13 @@ nav {
 nav a {
     float: right;
     display: block;
-    color: #000;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
     margin: 15px 15px 0 0 ;
 }
 
-nav a:first-of-type {
+nav>a:first-of-type {
     margin: 0;
     float: left;
 }
@@ -84,7 +106,6 @@ nav a:hover,
 nav a.navbar-selected,
 .dropdown:hover .dropbtn {
     padding: 14px 20px;
-    color: #000;
     font-weight: bold;
 }
 
@@ -99,7 +120,6 @@ nav a.navbar-selected,
   font-size: 16px;  
   border: none;
   outline: none;
-  color: #000;
   padding: 14px 20px;
   background-color: inherit;
   font-family: inherit;
@@ -109,21 +129,21 @@ nav a.navbar-selected,
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  z-index: 1;
+  background-color: var(--dd-background-hover-color);
 }
 
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 14px 20px;
   text-decoration: none;
   display: block;
   text-align: left;
+  margin: 0;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: var(--dd-background-color);
 }
 
 .dropdown:hover .dropdown-content {
@@ -145,7 +165,7 @@ table {
 }
   
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid var(--border-table-color);
     text-align: left;
     padding: 8px;
 }
@@ -223,11 +243,6 @@ td, th {
     margin: 0 80px;
 }
 
-.btn-start {
-    margin-top: 30px !important;
-    color: #fff !important;
-}
-
 /* General button styling */
 .btn {
     display: inline-block;
@@ -239,33 +254,32 @@ td, th {
 }
 
 .btn-inscriptions, .btn-parcours {
-    background-color: #ff914d;
-    color: #fff;
+    background-color: var(--btn1-background-color);
+    color: var(--btn-color);
     max-height: 25px;
     
     &:hover {
-        background-color: #ff6c11;
+        background-color: var(--btn1-background-hover-color);
     }
 }
 
 .btn-informations {
-    background-color:#9bfab3;
-    color: #000;
+    background-color:var(--btn2-background-color);
     max-height: 25px;
 
     &:hover {
-        background-color: #49c869;
+        background-color: var(--btn2-background-hover-color);
     }
 }
 
 .btn-benevoles {
-    background-color: #ff914d; 
+    background-color: var(--btn1-background-color); 
     font-size: 70px;
     font-weight: bold;
     border-radius: 25px;
     box-shadow: 0 2px 2px 0 #e6e6e6;
     &:hover {
-        background-color: #ff6c11;
+        background-color: var(--btn1-background-hover-color);
     }
 }
 
