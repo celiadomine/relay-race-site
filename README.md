@@ -3,3 +3,14 @@
 soo the goal is to build a low budget website for a relay run in delemont which is held starting september. On the website you should be able to see the most important information and to subscribe yourself for the run. 
 
 don't know what else I should write in here
+
+### Getting started
+Install dependencies
+```zsh
+npm i
+```
+
+Run web-server
+```zsh
+node index.js
+```
