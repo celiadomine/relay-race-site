@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Celia Domine">
+    <meta name="description" content="Voici le site web pour les courses de relais 'La relaide' qui sont organisées le 7 séptembre à delémont. Le site contient des informations pratiques et une possibilité d'inscription.">
+    <meta name="keywords" content="Le site web pour 'La relaide'">
+    <meta name="author" content="Célia Dominé">
     <title>Course de relay Delémont</title>
-    <link rel="shortcut icon" href="images/icon.svg">
+    <link rel="shortcut icon" href="images/favicon.svg">
 
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/layout.css">
@@ -21,6 +21,8 @@
     <link defer rel="stylesheet" href="./styles/contact.css">
     <link defer rel="stylesheet" href="./styles/information.css">
     <link defer rel="stylesheet" href="./styles/registration.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <script src="./scripts/index.js"></script>
 </head>
 <body>
     <header>
@@ -29,12 +31,12 @@
         </label>
         <nav>
             <label tabindex="0" for="news-screen">Accueil</label>
-            <label tabindex="0" for="sponsors-screen">Sponsors</label>
-            <label tabindex="0" for="volunteers-screen">Bénévoles</label>
-            <label tabindex="0" for="results-screen">Resultats</label>
-            <label tabindex="0" for="contact-screen">Contact</label>
             <label tabindex="0" for="information-screen">Informations</label>
             <label tabindex="0" for="registration-screen">Inscriptions</label>
+            <label tabindex="0" for="sponsors-screen">Sponsors</label>
+            <label tabindex="0" for="volunteers-screen">Bénévoles</label>
+            <label tabindex="0" for="results-screen">Résultats</label>
+            <label tabindex="0" for="contact-screen">Contact</label>
         </nav>
     </header>
 
@@ -45,19 +47,19 @@
 
             <div>
                 <figure>
-                    <img src="./images/where.svg" alt="" />
+                    <img src="./images/where.svg" alt="Where" />
                     <figcaption><b>OÙ</b></figcaption>
-                    <p>à Delémont</p>
+                    <p>La course aura lieu au stand de tir du Bambois à Delémont!</p>
                 </figure>
                 <figure>
-                    <img src="./images/when.svg" alt="" />
+                    <img src="./images/when.svg" alt="When" />
                     <figcaption><b>QUAND</b></figcaption>
-                    <p>Le samedi 29 septembre 2024, réservez la date !</p>
+                    <p>Le samedi 7 septembre 2024, réservez la date!</p>
                 </figure>
                 <figure>
-                    <img src="./images/who.svg" alt="" />
+                    <img src="./images/who.svg" alt="Who" />
                     <figcaption><b>POUR QUI</b></figcaption>
-                    <p>Pour tout le monde!</p>
+                    <p>La course est ouverte à tout le monde!</p>
                 </figure>
             </div>
 
@@ -66,7 +68,7 @@
                 <label tabindex="0" for="registration-screen">Inscriptions</label>
             </div>
 
-            <h1>Description</h1>
+            <h3>Description</h3>
             <article>
                 <p>Ce texte décrit la course en quelques phrases. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
@@ -77,6 +79,7 @@
         <input id="sponsors-screen" type="radio" name="navigation" />
         <section>
             <h1>Nos sponsors</h1>
+            <p>Nous remercions tous nos sponsors et partenaires pour leur soutien sans qui cette manifestation ne pourrait avoir lieu!</p>
         </section>
 
         <input id="volunteers-screen" type="radio" name="navigation" />
@@ -100,33 +103,25 @@
         <section>
             <h1>Informations</h1>
             <h3>Retrait des dossards</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
-            <h3>Accessibilité</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
-            <h3>Echauffement</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
+            <p>Le retrait des dossard se fait dès 9:00 et jusqu’à 30min avant le départ de la course. Les inscriptions sur place sont possibles jusqu'à 1h avant le départ de la course.</p>
+            
             <h3>Remise des prix</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
+            <p>La remise des prix se fera après les dernières arrivées aux alentours de 13:00 pour les adultes et de 15:15 pour les courses enfants. Les 3 meilleurs de chaque catégorie seront récompensés.</p>
+            
             <h3>Prix souvenir</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
+            <p>Un prix souvenir sera offert à chaque participant lors du retrait du dossard.</p>
+            
             <h3>Restauration</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
-            <h3>Vestiaires</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
+            <p>Une buvette avec un débit de boissons et de nourriture sera disponible sur place.</p>
+            
             <h3>Visiteurs</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
-
-            <h3>Contact</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+            <p>Les visiteurs sont les bienvenus au stand de tir pour supporter les coureurs.</p>
+            
+            <h3>Accessibilité</h3>
+            <p>Des parkings sont mis en place pour accueillir les coureurs et spectateurs mais le nombre de places étant limité, nous vous conseillons de faire du covoiturage. Merci de vous conformer à la signalisation et à nos bénévoles. 
+                <br>Depuis la gare de Delémont, la ligne de bus 1 dessert l’arrêt « Delémont, Hôpital » qui se trouve à 15min de marche du lieu de la course.</p>
         </section>
-
+        
         <input id="registration-screen" type="radio" name="navigation" />
         <section>
             <form action="https://formspree.io/f/mleqaqby" method="post">

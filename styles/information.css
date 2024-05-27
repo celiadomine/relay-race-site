@@ -3,4 +3,8 @@
         max-width: 800px;
         margin: auto;
     }
+
+    &>h3 {
+        margin-top: 20px;
+    }
 }

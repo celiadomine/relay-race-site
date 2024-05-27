@@ -18,7 +18,7 @@ header {
         padding: 15px;
 
         &>img {
-            max-width: 100px;
+            max-width: 170px;
         }
     }
 }
@@ -29,7 +29,8 @@ nav {
     flex-wrap: wrap;
     padding: 10px;
     margin-left: auto;
-    gap: 15px;
+    margin-right: 20px;
+    gap: 20px;
 
     &>* {
         padding: 3px;
@@ -59,6 +60,7 @@ input[name="navigation"]:not(:checked)+* {
 :has(#contact-screen:checked) nav>[for="contact-screen"],
 :has(#information-screen:checked) nav>[for="information-screen"],
 :has(#registration-screen:checked) nav>[for="registration-screen"] {
-    color: var(--theme-color-3);
+    color: var(--theme-color-5);
     text-decoration: underline;
+    font-weight: bold;
 }

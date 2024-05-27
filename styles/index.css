@@ -6,13 +6,17 @@
     transition: filter 0.2s, color 0.2s, background-color 0.2s;
     color-scheme: light dark;
     /*outline: none;*/
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
 body {
     background-color: var(--theme-color-0);
     /* so the navigation doesn't jump around */
     overflow-y: scroll;
+}
+
+h1 {
+    font-size: 60px;
 }
 
 @media (prefers-reduced-motion: reduce) {

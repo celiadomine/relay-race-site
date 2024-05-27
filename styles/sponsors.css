@@ -1,3 +1,6 @@
 #sponsors-screen+* {
-    
+    &>* {
+        max-width: 800px;
+        margin: auto;
+    }
 }

@@ -13,6 +13,10 @@
         padding-top: 10px;
     }
 
+    h1 {
+        font-size: 40px;
+    }
+
     header {
         /* put back into regular flow */
         position: unset;
@@ -37,6 +41,10 @@
                 margin: 0;
 
                 &[for="news-screen"] {
+                    mask-image: url("./icons/home.svg");
+                }
+
+                &[for="information-screen"] {
                     mask-image: url("./icons/info.svg");
                 }
 
@@ -53,10 +61,6 @@
                 }
 
                 &[for="contact-screen"] {
-                    display: none;
-                }
-
-                &[for="information-screen"] {
                     display: none;
                 }
 
