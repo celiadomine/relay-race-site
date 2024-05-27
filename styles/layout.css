@@ -1,0 +1,64 @@
+body {
+    height: 100svh;
+}
+
+header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    background: linear-gradient(0deg, #0000 0%, var(--theme-color-0) 100%);
+    z-index: 1;
+
+    &>label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+
+        &>img {
+            max-width: 100px;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: auto;
+    gap: 15px;
+
+    &>* {
+        padding: 3px;
+        margin-left: auto;
+    }
+
+    &>a {
+        background-color: var(--theme-color-3);
+        border-radius: 3px;
+    }
+}
+
+main {
+    /* hard-coded top so nav doesn't cover content */
+    padding: 100px 10px 10px 10px;
+}
+
+input[name="navigation"],
+input[name="navigation"]:not(:checked)+* {
+    display: none;
+}
+
+:has(#news-screen:checked) nav>[for=news-screen],
+:has(#sponsors-screen:checked) nav>[for="sponsors-screen"],
+:has(#volunteers-screen:checked) nav>[for="volunteers-screen"],
+:has(#results-screen:checked) nav>[for="results-screen"],
+:has(#contact-screen:checked) nav>[for="contact-screen"],
+:has(#information-screen:checked) nav>[for="information-screen"],
+:has(#registration-screen:checked) nav>[for="registration-screen"] {
+    color: var(--theme-color-3);
+    text-decoration: underline;
+}

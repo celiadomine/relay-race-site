@@ -1,0 +1,16 @@
+:root {
+    --theme-color-0: #EEE;
+    --theme-color-1: #333;
+    --theme-color-2: #DDD;
+    --theme-color-3: #ff914d;
+    --theme-color-4: #9bfab3;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-color-0: #333;
+        --theme-color-1: #EEE;
+        --theme-color-2: #444;
+        --theme-color-3: #F90;
+    }    
+}

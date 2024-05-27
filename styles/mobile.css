@@ -1,0 +1,77 @@
+@media (width <= 500px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        overflow: hidden;
+    }
+
+    main {
+        grid-row: 1 / span 1;
+        margin-bottom: auto;
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 10px;
+    }
+
+    header {
+        /* put back into regular flow */
+        position: unset;
+        display: block;
+        border-top: 1px solid var(--theme-color-1);
+
+        &>label {
+            display: none;
+        }
+
+        &>nav {
+            justify-content: space-evenly;
+
+            &>label {
+                /* hide text */
+                font-size: 0;
+                width: 40px;
+                height: 40px;
+                background-color: var(--theme-color-1);
+                mask-position: center;
+                mask-repeat: no-repeat;
+                margin: 0;
+
+                &[for="news-screen"] {
+                    mask-image: url("./icons/info.svg");
+                }
+
+                &[for="sponsors-screen"] {
+                    mask-image: url("./icons/sponsor.svg");
+                }
+
+                &[for="volunteers-screen"] {
+                    display: none;
+                }
+
+                &[for="results-screen"] {
+                    mask-image: url("./icons/results.svg");
+                }
+
+                &[for="contact-screen"] {
+                    display: none;
+                }
+
+                &[for="information-screen"] {
+                    display: none;
+                }
+
+                &[for="registration-screen"] {
+                    mask-image: url("./icons/register.svg");
+                }
+            }
+        }
+    }
+
+    /* on mobile these three menu's collapse to one */
+    #sponsors-screen:checked~:is(#volunteers-screen+*, #contact-screen+*) {
+        border-top: 1px solid var(--theme-color-1);
+        margin: 5px;
+        padding: 5px;
+        display: block;
+    }
+}

@@ -1,0 +1,16 @@
+#registration-screen+* {
+    &>form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        max-width: 600px;
+        margin: auto;
+
+        & input[type="submit"] {
+            grid-column: 1 / span 2;
+            background-color: var(--theme-color-3);
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
