@@ -38,18 +38,23 @@
                 background-color: var(--theme-color-1);
                 mask-position: center;
                 mask-repeat: no-repeat;
+                -webkit-mask-position: center;
+                -webkit-mask-repeat: no-repeat;
                 margin: 0;
 
                 &[for="news-screen"] {
                     mask-image: url("./icons/home.svg");
+                    -webkit-mask-image: url("./icons/home.svg");
                 }
 
                 &[for="information-screen"] {
                     mask-image: url("./icons/info.svg");
+                    -webkit-mask-image: url("./icons/info.svg");
                 }
 
                 &[for="sponsors-screen"] {
                     mask-image: url("./icons/sponsor.svg");
+                    -webkit-mask-image: url("./icons/sponsor.svg");
                 }
 
                 &[for="volunteers-screen"] {
@@ -58,6 +63,7 @@
 
                 &[for="results-screen"] {
                     mask-image: url("./icons/results.svg");
+                    -webkit-mask-image: url("./icons/results.svg");
                 }
 
                 &[for="contact-screen"] {
@@ -66,6 +72,7 @@
 
                 &[for="registration-screen"] {
                     mask-image: url("./icons/register.svg");
+                    -webkit-mask-image: url("./icons/register.svg");
                 }
             }
         }

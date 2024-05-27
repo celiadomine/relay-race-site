@@ -1,7 +1,7 @@
 #volunteers-screen+* {
     &>* {
-        text-align: center;
-        margin: 15px;
+        max-width: 800px;
+        margin: auto;
     }
 
     &>a {
