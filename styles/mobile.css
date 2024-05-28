@@ -66,7 +66,7 @@
                     -webkit-mask-image: url("./icons/results.svg");
                 }
 
-                &[for="contact-screen"] {
+                &[for="contact-screen"], &[for="programm-screen"] {
                     display: none;
                 }
 

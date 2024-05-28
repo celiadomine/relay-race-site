@@ -1,5 +1,45 @@
 #contact-screen+* {
-    &>h1 {
+    &>* {
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    &>div {
+        display: flex;
+        gap: 20px; 
+        margin-top: 15px;
+    }
+
+    & figure {
+        width: 50%;
         text-align: center;
+        background-color: var(--theme-color-2);
+        padding: 15px;
+        border-radius: 15px;
+
+        &>img {
+            width: 150px;
+        }
+    }
+
+    & figcaption {
+        font-weight: bold;
+    }
+
+    & h3 {
+        font-size: 25px;
+        border-top: 1px solid #000;
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+}
+
+@media (width <= 600px) {
+    #contact-screen+* {
+        &>div {
+            display: flex;
+            gap: 20px; 
+            margin-top: 20px;
+        } 
     }
 }
