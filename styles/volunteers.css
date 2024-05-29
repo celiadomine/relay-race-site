@@ -4,15 +4,14 @@
         margin: auto;
     }
 
-    &>a {
-        display: block;
-        margin: auto;
-        width: max-content;
-        padding: 15px;
+    & a {
+        display: inline-block;
         background-color: var(--theme-color-3);
-        font-size: 60px;
-        border-radius: 25px;
-        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 25px;
         box-shadow: 0 2px 2px 0 #e6e6e6;
+        margin-top: 10px;
     }
 }

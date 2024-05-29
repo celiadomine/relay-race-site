@@ -1,10 +1,14 @@
 #registration-screen+* {
+    &>* {
+        max-width: 800px;
+        margin: auto;
+    }
+
     &>form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
-        max-width: 600px;
-        margin: auto;
+        margin-top: 40px;
 
         & input[type="submit"] {
             grid-column: 1 / span 2;
@@ -12,5 +16,16 @@
             border: none;
             border-radius: 5px;
         }
+    }
+
+    & a {
+        display: inline-block;
+        background-color: var(--theme-color-3);
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 25px;
+        box-shadow: 0 2px 2px 0 #e6e6e6;
+        margin-top: 10px;
     }
 }

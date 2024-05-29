@@ -4,7 +4,83 @@
         margin: auto;
     }
 
-    &>h3 {
-        margin-top: 20px;
+    & summary {
+        display: flex;
+        font-size: 20px;
+        padding: 10px;
+        background-color: var(--theme-color-2);
+        border: 1px solid #000;
+        border-bottom: 0;
+        list-style: none;
+        gap: 20px;
+        cursor: pointer;
+    }
+
+    & summary::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-style: solid;
+        border-color: #0000 #000 #000 #0000;
+        border-width: 1px;
+        rotate: -45deg;
+        transition: all 0.2s;
+        margin-top: 9px;
+    }
+
+    & details[open]>summary::before {
+        rotate: 45deg;
+        margin-top: 8px;
+    }
+
+    & details:first-of-type {
+        &>summary {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        }
+    }
+
+    & details:last-of-type {
+        &>summary, p {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom: 1px solid #000;
+        }
+
+        &[open] {
+            &>summary {
+            border-radius: 0;
+            border-bottom: none;
+            }
+        }
+    }
+
+    & p {
+        padding: 10px;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+    
+    & details {
+       border-bottom: 0;
+       
+        &[open] {
+            & p {
+                border-top: 1px solid #000;
+            }
+        }
+    }
+
+
+    & img {
+        width: 50%;
+        display: block;
+        border-radius: 15px;
+    }
+
+    &>div {
+        display: grid;
+        margin-top: 15px;
     }
 }

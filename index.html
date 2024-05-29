@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/themes.css">
     <link rel="stylesheet" href="./styles/mobile.css">
-    
     <link rel="stylesheet" href="./styles/news.css">
+
     <link defer rel="stylesheet" href="./styles/sponsors.css">
     <link defer rel="stylesheet" href="./styles/volunteers.css">
     <link defer rel="stylesheet" href="./styles/results.css">
@@ -28,7 +28,7 @@
 <body>
     <header>
         <label for="news-screen">
-            <img src="images/icon.svg" alt="Logo of the relay run la relaide ">
+            <img src="images/icon.svg" alt="Logo la relaide">
         </label>
         <nav>
             <label tabindex="0" for="news-screen">Accueil</label>
@@ -38,7 +38,6 @@
             <label tabindex="0" for="volunteers-screen">Bénévoles</label>
             <label tabindex="0" for="results-screen">Résultats</label>
             <label tabindex="0" for="contact-screen">Contact</label>
-            <label tabindex="0" for="programm-screen">Programme</label>
         </nav>
     </header>
 
@@ -72,9 +71,11 @@
 
             <h3>Description</h3>
             <article>
-                <p>Ce texte décrit la course en quelques phrases. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-
-                <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43232.925914404055!2d7.288424855500414!3d47.371788997981625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791e626c3c17ad5%3A0xc185f5192ee3b85d!2sDelsberg!5e0!3m2!1sde!2sch!4v1716128374976!5m2!1sde!2sch" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Participez à une course inédite dans le Jura : une course en relais !
+                    <br>Affrontez cette course par équipe de 2. Que vous soyez amateur ou coureur confirmé, cette course vous réserve des moments de plaisir tout en testant vos limites. 
+                    <br>Vous soutenez ainsi l’AJAFEC à qui nous reverserons les bénéfices de la manifestation.
+                </p>
+                <img src="./images/ajafec.png" alt="Logo AJAFEC">
             </article>
         </section>
         
@@ -83,16 +84,14 @@
             <h1>Nos sponsors</h1>
             <p>Nous remercions tous nos sponsors et partenaires pour leur soutien sans qui cette manifestation ne pourrait avoir lieu!</p>
         </section>
-
         <input id="volunteers-screen" type="radio" name="navigation" />
         <section>
             <div>
-            <h1>Bénévoles</h1>
-            <p>Inscrivez-vous comme bénévole!!</p>
-            <a href="" target="_blank" rel="noopener noreferrer">Je m'inscris!!!</a>
+                <h1>Bénévoles</h1>
+                <p>Inscrivez-vous comme bénévole!!</p>
+                <a href="https://www.nyan.cat/" target="_blank">Je m'inscris!!!</a>
             </div>
         </section>
-
         <input id="results-screen" type="radio" name="navigation" />
         <section>
             <p>Les résultats et photos vont être mis en ligne après la course! hihihihihihihihihihihihihihihihihi</p>
@@ -124,33 +123,43 @@
         <input id="information-screen" type="radio" name="navigation" />
         <section>
             <h1>Informations</h1>
-            <h3>Retrait des dossards</h3>
-            <p>Le retrait des dossard se fait dès 9:00 et jusqu’à 30min avant le départ de la course. Les inscriptions sur place sont possibles jusqu'à 1h avant le départ de la course.</p>
-
-            <h3>Remise des prix</h3>
-            <p>La remise des prix se fera après les dernières arrivées aux alentours de 13:00 pour les adultes et de 15:15 pour les courses enfants. Les 3 meilleurs de chaque catégorie seront récompensés.</p>
-            
-            <h3>Prix souvenir</h3>
-            <p>Un prix souvenir sera offert à chaque participant lors du retrait du dossard.</p>
-            
-            <h3>Restauration</h3>
-            <p>Une buvette avec un débit de boissons et de nourriture sera disponible sur place.</p>
-            
-            <h3>Visiteurs</h3>
-            <p>Les visiteurs sont les bienvenus au stand de tir pour supporter les coureurs.</p>
-            
-            <h3>Accessibilité</h3>
-            <p>Des parkings sont mis en place pour accueillir les coureurs et spectateurs mais le nombre de places étant limité, nous vous conseillons de faire du covoiturage. Merci de vous conformer à la signalisation et à nos bénévoles. 
-            <br>Depuis la gare de Delémont, la ligne de bus 1 dessert l’arrêt « Delémont, Hôpital » qui se trouve à 15min de marche du lieu de la course.</p>
-            
-            <h3>Association</h3> 
-            <p>Nous avons décidé de reverser les bénéfices de la manifestation à l’Association Jurassienne d’Aide aux Familles d’Enfants atteints de Cancer (AJAFEC). N’hésitez pas à aller consulter leur site internet pour en savoir plus sur l’association.
-            <br>Plus d'info sur l’association sous <a href="https://www.ajafec.ch" target="_blank">www.ajafec.ch</a>.</p>
-
-            <h3>Le programme</h3>
-            <p>Vous pouvez regarder le programme ici: <a href="""></a></p>
+            <details>
+                <summary>Retrait des dossards</summary>
+                <p>Le retrait des dossard se fait dès 9:00 et jusqu’à 30min avant le départ de la course. Les inscriptions sur place sont possibles jusqu'à 1h avant le départ de la course.</p>
+            </details>
+            <details>
+                <summary>Remise des prix</summary>
+                <p>La remise des prix se fera après les dernières arrivées aux alentours de 13:00 pour les adultes et de 15:15 pour les courses enfants. Les 3 meilleurs de chaque catégorie seront récompensés.</p>
+            </details>
+            <details>
+                <summary>Prix souvenir</summary>
+                <p>Un prix souvenir sera offert à chaque participant lors du retrait du dossard.</p>
+            </details>
+            <details>
+                <summary> Restauration</summary>
+                <p>Une buvette avec un débit de boissons et de nourriture sera disponible sur place.</p>
+            </details>
+            <details>
+                <summary>Visiteurs</summary>
+                <p>Les visiteurs sont les bienvenus au stand de tir pour supporter les coureurs.</p>
+            </details>
+            <details>
+                <summary>Accessibilité</summary>
+                <p>Des parkings sont mis en place pour accueillir les coureurs et spectateurs mais le nombre de places étant limité, nous vous conseillons de faire du covoiturage. Merci de vous conformer à la signalisation et à nos bénévoles. 
+                <br>Depuis la gare de Delémont, la ligne de bus 1 dessert l’arrêt « Delémont, Hôpital » qui se trouve à 15min de marche du lieu de la course.</p>   
+            </details>
+            <details>
+                <summary>Association</summary>
+                <div><p>Nous avons décidé de reverser les bénéfices de la manifestation à l’Association Jurassienne d’Aide aux Familles d’Enfants atteints de Cancer (AJAFEC). N’hésitez pas à aller consulter leur site internet pour en savoir plus sur l’association.
+                    <br>Plus d'info sur l’association sous <a href="https://www.ajafec.ch" target="_blank"><u>www.ajafec.ch</u></a>.</p>
+                    <!-- <img src="./images/ajafec.png" alt="Logo AJAFEC"> not sure if I want this picture hahahha -->
+                </div>
+            </details>
+            <details>
+                <summary>Programme</summary>
+                <p>Vous trouvez les horaires de la course et le programme <strong><label for="programm-screen">ici</label></strong>.</p>
+            </details>
         </section>
-
         <input id="programm-screen" type="radio" name="navigation"/>
         <section>
         <h1>Le programme</h1>
@@ -220,7 +229,6 @@
                     <td>Écoliers - Écolières C (2015-2016)</td>
                     <td>800m</td>
                     <td>14:10</td>
-                    
                 </tr>
                 <tr>
                     <td>Écoliers - Écolières D (2017-2018)</td>
@@ -238,25 +246,15 @@
             <br>*Un supplément de 4 CHF sera demandé pour les inscriptions sur place.
             <br>Le prix affiché est celui par participant. Le prix pour les courses en relais est donc de 30 CHF par équipe.
             <br>Les Écoliers A ont la possibilité de participer au relais de 2 x 3 km et les Cadets B et les juniors peuvent participer au relais de 2 x 6 km. Dans ce cas, ils seront surclassés.
-            </p>
-        
+        </p>
+        </section>
         <input id="registration-screen" type="radio" name="navigation" />
         <section>
-            <form action="https://formspree.io/f/mleqaqby" method="post">
-                <label for="name">Nom et prénom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Adresse mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Numéro de téléphone:</label>
-                <input type="tel" id="phone" name="phone" required> 
-                <label for="category">Parcours:</label>
-                <select id="category" name="category" required>
-                    <option value="" selected disabled>Please select</option>
-                    <option value="enfant">Parcours enfant</option>
-                    <option value="adulte">Parcours adulte</option>
-                </select>
-                <input type="submit" value="Register">
-            </form>
+            <div>
+                <h1>Inscription</h1>
+                <p>Inscrivez-vous avec votre partenaire!!</p>
+                <a href="https://www.nyan.cat/" target="_blank">Je m'inscris!!!</a>
+            </div>
         </section>
     </main>
 </body>
