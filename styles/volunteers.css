@@ -6,12 +6,17 @@
 
     & a {
         display: inline-block;
+        color: var(--theme-color-0);
         background-color: var(--theme-color-3);
         border: none;
         border-radius: 10px;
         padding: 10px;
         font-size: 25px;
-        box-shadow: 0 2px 2px 0 #e6e6e6;
+        box-shadow: 0 4px 0px 0 #595555;
         margin-top: 10px;
+
+        &:hover {
+            box-shadow: none;
+        }
     }
 }
