@@ -23,6 +23,7 @@
         display: block;
         border-top: 1px solid var(--theme-color-1);
         pointer-events: all;
+        background: #FF914D;
 
         &>label {
             display: none;
@@ -30,18 +31,22 @@
 
         &>nav {
             justify-content: space-evenly;
-
+            
             &>label {
                 /* hide text */
                 font-size: 0;
                 width: 40px;
                 height: 40px;
-                background-color: var(--theme-color-1);
+                background-color: #000;
                 mask-position: center;
                 mask-repeat: no-repeat;
                 -webkit-mask-position: center;
                 -webkit-mask-repeat: no-repeat;
                 margin: 0;
+
+                &:hover{
+                    background-color: white;
+                }
 
                 &[for="news-screen"] {
                     mask-image: url("./icons/home.svg");
@@ -87,12 +92,5 @@
         display: block;
     }
 
-    /* WHY DOESN?T THIS WORK AH
-    #registration-screen:checked~:is(#volunteers-screen+*) {
-        border-top: 1px solid var(--theme-color-1);
-        margin: 5px;
-        padding: 5px;
-        display: block;
-    } */
 
 }
