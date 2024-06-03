@@ -59,16 +59,12 @@
                     -webkit-mask-image: url("./icons/sponsor.svg");
                 }
 
-                &[for="volunteers-screen"] {
-                    display: none;
-                }
-
                 &[for="results-screen"] {
                     mask-image: url("./icons/results.svg");
                     -webkit-mask-image: url("./icons/results.svg");
                 }
 
-                &[for="contact-screen"], &[for="programm-screen"] {
+                &[for="contact-screen"], &[for="programm-screen"], &[for="volunteers-screen"] {
                     display: none;
                 }
 
@@ -82,6 +78,13 @@
 
     /* on mobile these three menu's collapse to one */
     #sponsors-screen:checked~:is(#contact-screen+*) {
+        border-top: 1px solid var(--theme-color-1);
+        margin: 5px;
+        padding: 5px;
+        display: block;
+    }
+
+    #registration-screen:checked~:is(#volunteers-screen+*) {
         border-top: 1px solid var(--theme-color-1);
         margin: 5px;
         padding: 5px;
