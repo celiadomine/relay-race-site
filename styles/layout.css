@@ -67,7 +67,7 @@ input[name="navigation"]:not(:checked)+* {
 :has(#information-screen:checked) nav>[for="information-screen"],
 :has(#registration-screen:checked) nav>[for="registration-screen"],
 :has(#programm-screen:checked) nav>[for="programm-screen"]{
-    color: var(--theme-color-5);
+    color: var(--theme-color-1);
     text-decoration: underline;
     font-weight: bold;
 }

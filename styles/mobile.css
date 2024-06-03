@@ -44,10 +44,6 @@
                 -webkit-mask-repeat: no-repeat;
                 margin: 0;
 
-                &:hover{
-                    background-color: white;
-                }
-
                 &[for="news-screen"] {
                     mask-image: url("./icons/home.svg");
                     -webkit-mask-image: url("./icons/home.svg");

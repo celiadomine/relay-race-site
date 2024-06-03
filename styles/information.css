@@ -7,7 +7,7 @@
     & h1 {
         margin-bottom: 20px;
     }
-    
+
     & summary {
         display: flex;
         font-size: 20px;
@@ -46,16 +46,20 @@
     }
 
     & details:last-of-type {
-        &>summary, p {
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom: 1px solid #000;
+        &>summary, p:last-of-type {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom: 1px solid #000;
+        }
+
+        & p:last-of-type {
+            border-top: none;
+            margin-bottom: 150px;
         }
 
         &[open] {
             &>summary {
             border-radius: 0;
-            border-bottom: none;
             }
         }
     }
@@ -64,6 +68,10 @@
         padding: 10px;
         border-left: 1px solid #000;
         border-right: 1px solid #000;
+        
+        & u {
+            text-decoration: underline;
+        }
     }
     
     & details {
@@ -76,7 +84,6 @@
         }
     }
 
-
     & img {
         width: 50%;
         display: block;
@@ -87,23 +94,21 @@
         display: grid;
         margin-top: 15px;
     }
+    
+    & table {
+        width: 100%;
+        border: 1px solid #000;
+        border-top: none;
+        border-bottom: none;
+        padding: 15px;
+    }
 
     th, td {
         border: 1px solid #ddd;
         text-align: left;
         padding: 8px;
     }
-
-    .bold-line {
-        border-top: 2px solid #ddd;
-    }
-
-    &>table {
-        border-collapse: collapse;
-        width: 100%;
-        border: 2px solid #ddd;
-    }
-
+    
     &>p {
         margin-top: 30px;
     }

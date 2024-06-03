@@ -24,13 +24,6 @@ h1 {
     }
 }
 
-@media (hover: hover) {
-    :is(label, button):hover {
-        filter: brightness(50%);
-        cursor: pointer;
-    }
-}
-
 :is(label, button, a):focus-visible {
     filter: brightness(50%);
 }

@@ -4,8 +4,6 @@
     --theme-color-2: #DDD;
     --theme-color-3: #ff914d;
     --theme-color-4: #9bfab3;
-    --theme-color-5: #000;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +12,5 @@
         --theme-color-1: #EEE;
         --theme-color-2: #444;
         --theme-color-3: #FF914D;
-        --theme-color-5: #EEE;
     }    
 }
