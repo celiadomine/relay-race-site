@@ -6,7 +6,7 @@
     --theme-color-4: #9bfab3;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) { /* DARK MODEEE :D*/
     :root {
         --theme-color-0: #333;
         --theme-color-1: #EEE;

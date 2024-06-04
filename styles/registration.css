@@ -4,20 +4,6 @@
         margin: auto;
     }
 
-    &>form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-        margin-top: 40px;
-
-        & input[type="submit"] {
-            grid-column: 1 / span 2;
-            background-color: var(--theme-color-3);
-            border: none;
-            border-radius: 5px;
-        }
-    }
-
     a {
         display: inline-block;
         color: #000;

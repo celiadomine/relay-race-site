@@ -3,21 +3,21 @@ body {
 }
 
 header {
-    position: fixed;
+    position: fixed; /* that it stayes there */
     inset: 0 0 auto 0;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 15px;
-    background: linear-gradient(0deg, #0000 0%, var(--theme-color-0) 100%);
+    background: linear-gradient(0deg, #0000 0%, var(--theme-color-0) 100%); /* gradient under the header */
     z-index: 1;
-    pointer-events: none;
+    pointer-events: none; /* so that you can click under the header*/
 
     &>label {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 15px;
-        pointer-events: all;
+        pointer-events: all; /* that you can select a title */
 
         &>img {
             max-width: 170px;
@@ -56,8 +56,8 @@ main {
 
 input[name="navigation"],
 input[name="navigation"]:not(:checked)+* {
-    display: none;
-}
+    display: none; /* don't show the pages which aren't selected */
+}   
 
 :has(#news-screen:checked) nav>[for=news-screen],
 :has(#sponsors-screen:checked) nav>[for="sponsors-screen"],
@@ -65,8 +65,7 @@ input[name="navigation"]:not(:checked)+* {
 :has(#results-screen:checked) nav>[for="results-screen"],
 :has(#contact-screen:checked) nav>[for="contact-screen"],
 :has(#information-screen:checked) nav>[for="information-screen"],
-:has(#registration-screen:checked) nav>[for="registration-screen"],
-:has(#programm-screen:checked) nav>[for="programm-screen"]{
+:has(#registration-screen:checked) nav>[for="registration-screen"]{
     color: var(--theme-color-1);
     text-decoration: underline;
     font-weight: bold;

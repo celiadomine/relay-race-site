@@ -20,6 +20,10 @@
         cursor: pointer;
     }
 
+    & summary::-webkit-details-marker { /* to hide the marker in safari browser*/
+        display: none;
+    }
+
     & summary::before {
         content: "";
         display: inline-block;

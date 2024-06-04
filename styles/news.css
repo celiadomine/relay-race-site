@@ -4,55 +4,55 @@
         margin: 15px auto;
     }
 
-    &>img {
+    &>img { /* the logo*/
         width: 100%;
         display: block;
         border-radius: 15px;
     }
 
-    &>div {
+    &>div { /* the container for the 3 information boxes */
         display: flex;
         justify-content: center;
         gap: 15px;
         margin: 30px auto;
     }
 
-    & figure {
+    & figure { /*the 3 grey boxes */
         width: 300px;
         text-align: center;
         background-color: var(--theme-color-2);
         padding: 15px;
         border-radius: 15px;
 
-        &>img {
+        &>img { /* the small pictos*/
             width: 50px;
         }
     }
 
-    & label {
+    & label { /* the buttons*/
         min-width: 200px;
         width: 400px;
         padding: 5px 15px;
-        background-color: var(--theme-color-3);
         border-radius: 25px;
         text-align: center;
         color: #000;
+        background-color: var(--theme-color-3);
         box-shadow: 0 3px 0 #a45d31;
-        transition: all 0.08s ease-in-out;
+        transition: all 0.08s ease-in-out; /* that the box shadow diappears slowly*/
 
-        &:first-child {
+        &:first-child { /*the green button*/
             background-color: #9bfab3;
             box-shadow: 0 3px 0 #437b23;
         }
 
-        &:hover {
+        &:hover { /* that you can really press on the buttons*/
             box-shadow: 0 0 0 #a45d31;
             transform: translateY(3px);
             cursor: pointer;
         }
     }
 
-    &>article {
+    &>article { /*the description*/
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
@@ -71,7 +71,7 @@
 
 @media (width <= 600px) {
     #news-screen+* {
-        &>div {
+        &>div { /* that the boxes are responsive*/
             display: grid;
             grid-template-columns: 1fr;
             max-width: unset;
@@ -83,7 +83,6 @@
 
         &>article {
             display: block;
-
             &>a {
                 &>img {
                     width: 100%;

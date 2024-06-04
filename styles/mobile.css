@@ -1,3 +1,4 @@
+/* the main styling for mobile */
 @media (width <= 500px) {
     body {
         display: grid;
@@ -13,6 +14,10 @@
         padding-top: 10px;
     }
 
+    footer {
+        display: none;
+    }
+
     h1 {
         font-size: 40px;
     }
@@ -22,7 +27,7 @@
         position: unset;
         display: block;
         border-top: 1px solid var(--theme-color-1);
-        pointer-events: all;
+        pointer-events: all; 
         background: #FF914D;
 
         &>label {
@@ -63,20 +68,21 @@
                     mask-image: url("./icons/results.svg");
                     -webkit-mask-image: url("./icons/results.svg");
                 }
-
-                &[for="contact-screen"], &[for="programm-screen"], &[for="volunteers-screen"] {
-                    display: none;
-                }
-
+                
                 &[for="registration-screen"] {
                     mask-image: url("./icons/register.svg");
                     -webkit-mask-image: url("./icons/register.svg");
                 }
+                
+                &[for="contact-screen"], &[for="volunteers-screen"] {
+                    display: none;
+                }
+
             }
         }
     }
 
-    /* on mobile these three menu's collapse to one */
+    /* on mobile these two menu's collapse to one */ 
     #sponsors-screen:checked~:is(#contact-screen+*) {
         border-top: 1px solid var(--theme-color-1);
         margin: 5px;
@@ -86,10 +92,8 @@
 
     #registration-screen:checked~:is(#volunteers-screen+*) {
         border-top: 1px solid var(--theme-color-1);
-        margin: 5px;
-        padding: 5px;
+        margin: 35px 5px;
+        padding: 35px 5px;
         display: block;
     }
-
-
 }
