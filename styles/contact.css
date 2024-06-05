@@ -6,11 +6,21 @@
     
     &>div { /* the container for the contact pictos*/
         display: flex;
-        gap: 20px; 
-        margin-top: 15px;
+        gap: 15px; 
+        margin-top: 5px;
+
+        &>a:first-of-type {
+            margin-top: 5px; /* to align the 2 icons */
+        }
+
+        &>a:last-of-type {
+            &>img {
+                width: 55px;
+            }
+        }
     }
 
-    & figure { /* the grey box */
+    figure { /* the grey box */
         width: 50%;
         text-align: center;
         background-color: var(--theme-color-2);
@@ -22,11 +32,11 @@
         }
     }
 
-    & figcaption {
+    figcaption {
         font-weight: bold;
     }
 
-    & h3 {
+    h3 {
         font-size: 25px;
         border-top: 1px solid var(--theme-color-1);
         margin-top: 25px;

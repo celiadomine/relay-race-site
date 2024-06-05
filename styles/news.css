@@ -17,7 +17,7 @@
         margin: 30px auto;
     }
 
-    & figure { /*the 3 grey boxes */
+    figure { /*the 3 grey boxes */
         width: 300px;
         text-align: center;
         background-color: var(--theme-color-2);
@@ -29,7 +29,7 @@
         }
     }
 
-    & label { /* the buttons*/
+    label { /* the buttons*/
         min-width: 200px;
         width: 400px;
         padding: 5px 15px;
@@ -52,20 +52,8 @@
         }
     }
 
-    &>article { /*the description*/
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        max-width: 800px;
-
-        &>a {
-            &>img {
-                width: auto;
-                height: 200px;
-                border-radius: 15px;
-                margin: 0 20px;
-            }
-        }
+    article p a u {
+        text-decoration: underline;
     }
 }
 
@@ -83,13 +71,6 @@
 
         &>article {
             display: block;
-            &>a {
-                &>img {
-                    width: 100%;
-                    height: auto;
-                    margin: 10px 0;
-                }
-            }
         }
 
         & label {
