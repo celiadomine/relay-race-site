@@ -1,5 +1,5 @@
 /* the main styling for mobile */
-@media (width <= 500px) {
+@media (width <= 700px) {
     body {
         display: grid;
         grid-template-rows: 1fr auto;

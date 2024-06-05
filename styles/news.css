@@ -57,7 +57,7 @@
     }
 }
 
-@media (width <= 600px) {
+@media (width <= 700px) {
     #news-screen+* {
         &>div { /* that the boxes are responsive*/
             display: grid;

@@ -44,7 +44,7 @@
     }
 }
 
-@media (width <= 600px) {
+@media (width <= 700px) {
     #contact-screen+* {
         &>div {
             display: flex;
