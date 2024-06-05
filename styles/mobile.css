@@ -1,9 +1,11 @@
 /* the main styling for mobile */
 @media (width <= 700px) {
     body {
+        height: 100svh;
         display: grid;
         grid-template-rows: 1fr auto;
         overflow: hidden;
+        min-height: 0;
     }
 
     main {
@@ -12,12 +14,13 @@
         height: 100%;
         overflow-y: auto;
         padding-top: 10px;
+
     }
 
     footer {
         display: none;
     }
-
+    
     h1 {
         font-size: 40px;
     }
