@@ -3,4 +3,27 @@
         max-width: 800px;
         margin: auto;
     }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &>img {
+            border-radius: 15px;
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+@media (width <= 700px) {
+    div {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
 }
