@@ -76,3 +76,12 @@ input[name="navigation"]:not(:checked)+* {
     text-decoration: underline;
     font-weight: bold;
 }
+
+
+@media (width <= 966px) {
+    header{
+        &>label {
+            display: none;
+        }
+    }
+} 
