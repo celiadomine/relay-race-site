@@ -51,10 +51,6 @@
             cursor: pointer;
         }
     }
-
-    article p a u {
-        text-decoration: underline;
-    }
 }
 
 @media (width <= 700px) {

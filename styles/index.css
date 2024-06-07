@@ -18,6 +18,10 @@ h1 {
     font-size: 60px;
 }
 
+u {
+    text-decoration: underline;
+}
+
 footer {
     margin-top: 5%;
     text-align: center;

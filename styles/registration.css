@@ -18,10 +18,6 @@
         transition: all 0.08s ease-in-out;
     }
 
-    u {
-        text-decoration: underline;
-    }
-
     a:hover {
         box-shadow: 0 0 0 #a45d31;
         transform: translateY(3px);
