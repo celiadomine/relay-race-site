@@ -88,10 +88,23 @@
         }
     }
 
-    p {
+    p, ul {
         padding: 10px;
         border-left: 1px solid #000;
         border-right: 1px solid #000;
+    }
+
+    ul {
+        list-style-type: none;
+        border-bottom: none;
+    }
+
+    li {
+        margin: 20px 0;
+
+        &:first-of-type {
+            margin: 0;
+        }
     }
 
     img {
@@ -113,3 +126,14 @@
         padding: 8px;
     }
 }
+
+@media (width <= 700px) {
+    li {
+        margin: 50px 0 !important;
+
+        &:first-of-type {
+            margin: 20px 0 !important;
+        }
+    }
+}
+
