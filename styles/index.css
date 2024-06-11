@@ -22,37 +22,8 @@ u {
     text-decoration: underline;
 }
 
-footer {
-    margin-top: 5%;
-    text-align: center;
-    font-size: 12px;
-
-    &>div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    
-        &>a {
-            &>img {
-                width: 25px;
-            }
-        }
-
-        &>a:last-of-type img {
-            width: 32px;
-        }
-    }
-
-    &>p {
-        margin: 7px;
-    }
-}
-
 @media (prefers-reduced-motion: reduce) { /* to protect the epileptics :) */
     * {
         transition: none !important;
     }
 }
-
-
