@@ -201,9 +201,3 @@
         }
     }
 }
-
-        &:first-of-type {
-            margin: 20px 0 !important;
-        }
-    }
-}
