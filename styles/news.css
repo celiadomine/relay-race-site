@@ -23,10 +23,6 @@
         background-color: var(--theme-color-2);
         padding: 15px;
         border-radius: 15px;
-
-        &>img { /* the small pictos*/
-            width: 50px;
-        }
     }
 
     label { /* the buttons*/
@@ -46,7 +42,7 @@
         }
 
         &:hover { /* that you can really press on the buttons*/
-            box-shadow: 0 0 0 #a45d31;
+            box-shadow: 0 0 0 #0000;
             transform: translateY(3px);
             cursor: pointer;
         }

@@ -20,7 +20,7 @@
     footer {
         display: none;
     }
-    
+
     h1 {
         font-size: 40px;
     }
@@ -30,7 +30,7 @@
         position: unset;
         display: block;
         border-top: 1px solid var(--theme-color-1);
-        pointer-events: all; 
+        pointer-events: all;
         background: #FF914D;
 
         &>label {
@@ -39,10 +39,12 @@
 
         &>nav {
             justify-content: space-evenly;
-            
+
             &>label {
                 /* hide text */
                 font-size: 0;
+                /* so lighthouse doesn't complain */
+                color: #fff;
                 width: 40px;
                 height: 40px;
                 background-color: #000;
@@ -71,12 +73,12 @@
                     mask-image: url("./icons/results.svg");
                     -webkit-mask-image: url("./icons/results.svg");
                 }
-                
+
                 &[for="registration-screen"] {
                     mask-image: url("./icons/register.svg");
                     -webkit-mask-image: url("./icons/register.svg");
                 }
-                
+
                 &[for="contact-screen"], &[for="volunteers-screen"] {
                     display: none;
                 }
@@ -85,7 +87,7 @@
         }
     }
 
-    /* on mobile these two menu's collapse to one */ 
+    /* on mobile these two menu's collapse to one */
     #sponsors-screen:checked~:is(#contact-screen+*) {
         border-top: 1px solid var(--theme-color-1);
         margin: 5px;

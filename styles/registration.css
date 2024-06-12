@@ -23,7 +23,7 @@
         max-width: 300px;
 
         &:hover {
-            box-shadow: 0 0 0 #a45d31;
+            box-shadow: 0 0 0 #0000;
             transform: translateY(3px);
             cursor: pointer;
         }
@@ -40,11 +40,13 @@
 }
 
 @media (width <= 700px) {
-    div {
-        flex-direction: column;
-    }
+    #registration-screen+* {
+        & div {
+            flex-direction: column;
+        }
 
-    a {
-        margin-right: 20px;
+        & a {
+            margin-right: 20px;
+        }
     }
 }
