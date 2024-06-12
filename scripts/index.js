@@ -4,3 +4,16 @@ document.addEventListener("keydown", e => {
         e.target.click();
     }
 });
+
+function scrollToTop() {
+    console.log("scrolling to top")
+    window.scrollTo(0, 0);
+}
+
+// that it scrolls to top when you click on a label
+window.onload = () => {
+    const navigationElements = document.querySelectorAll("[name=navigation]");
+    for(const element of navigationElements) {
+        element.addEventListener("change", scrollToTop);
+    }
+}
