@@ -88,6 +88,12 @@
         }
     }
 
+    p {
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        padding: 10px;
+    }
+
     ul { /* for the gallery with the trails*/
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -148,40 +154,49 @@
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
 
-  /* Modal Content (Image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
+    /* Modal Content (Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
 
-  /* Add Animation - Zoom in the Modal */
-  .modal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
+    /* Add Animation - Zoom in the Modal */
+    .modal-content {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
 
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
+    @keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+    }
 
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
+    /* The button for the modal */
+    .close, .download {
+        position: absolute;
+        top: 15px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
 
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
+    .close {
+        right: 35px;
+    }
+
+    .download {
+        right: 100px;
+    }
+
+    .close:hover,
+    .close:focus,
+    .download:hover,
+    .download:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
