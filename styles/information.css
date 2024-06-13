@@ -88,30 +88,26 @@
         }
     }
 
-    p, ul {
-        padding: 10px;
-        border-left: 1px solid #000;
-        border-right: 1px solid #000;
-    }
-
-    ul {
-        list-style-type: none;
-        border-bottom: none;
+    ul { /* for the gallery with the trails*/
         display: grid;
-        grid-template-columns: 2 ;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        padding: 10px;
+        border: 1px solid #000;
+        border-bottom: none;
     }
 
     li {
         margin: 20px 0;
 
-        &:first-of-type {
-            margin: 0;
+        &>img {
+            width: 80%;
         }
     }
 
     img {
         display: block;
-        width: 30%;
+        width: 30%; /* for the association img */
         border-radius: 15px;
         margin-top: 20px;
     }
@@ -188,16 +184,4 @@
     text-decoration: none;
     cursor: pointer;
   }
-}
-
-@media (width <= 700px) {
-    #information-screen+* {
-        & li {
-            margin: 50px 0 !important;
-
-            &:first-of-type {
-                margin: 20px 0 !important;
-            }
-        }
-    }
 }

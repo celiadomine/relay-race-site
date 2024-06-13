@@ -15,7 +15,7 @@
         justify-content: center;
         gap: 15px;
         margin: 30px auto;
-            
+
             &>img {
             height: auto;
             width: 100%;
@@ -32,6 +32,21 @@
         background-color: var(--theme-color-2);
         padding: 15px;
         border-radius: 15px;
+    }
+
+    .logo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+
+       &>img {
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+       }
     }
 
     label { /* the buttons*/
