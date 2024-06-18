@@ -79,7 +79,7 @@
                     -webkit-mask-image: url("./icons/register.svg");
                 }
 
-                &[for="contact-screen"], &[for="volunteers-screen"] {
+                &[for="contact-screen"], &[for="volunteers-screen"], &[for="photos-screen"]  {
                     display: none;
                 }
 
