@@ -10,6 +10,13 @@
         border-radius: 15px;
     }
 
+    figure {
+        border: 7px solid var(--theme-color-3);
+        padding: 15px;
+        border-radius: 15px;
+        margin: 50px auto;
+    }
+
     &>div { /* the container for the 3 information boxes */
         display: flex;
         justify-content: center;
@@ -24,14 +31,14 @@
             align-items: center;
             margin: 10px 0;
         }
-    }
 
-    figure { /*the 3 grey boxes */
-        width: 300px;
-        text-align: center;
-        background-color: var(--theme-color-2);
-        padding: 15px;
-        border-radius: 15px;
+        &>figure { /*the 3 grey boxes */
+            width: 300px;
+            text-align: center;
+            background-color: var(--theme-color-2);
+            border: none;
+            margin: unset
+        }
     }
 
     .logo-container {
