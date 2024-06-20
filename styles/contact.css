@@ -4,13 +4,18 @@
         margin: auto;
     }
 
-    &>div { /* the container for the contact pictos*/
+    &>div { /* the container for the contact pictos */
         display: flex;
         gap: 15px;
         margin-top: 5px;
 
-        & img {
+        img {
             width: 55px;
+        }
+
+        &.mail-icon {
+            width: 52px;
+            padding: 2px;
         }
     }
 

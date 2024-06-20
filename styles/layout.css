@@ -83,6 +83,10 @@ footer {
     }
 }
 
+.mail-icon {
+    padding: 2px;
+}
+
 input[name="navigation"],
 input[name="navigation"]:not(:checked)+* {
     display: none; /* don't show the pages which aren't selected */

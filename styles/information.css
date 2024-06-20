@@ -101,7 +101,9 @@
         padding: 10px;
         border: 1px solid #000;
         border-bottom: none;
+        border-top: none;
     }
+
 
     li {
         margin: 20px 0;
@@ -116,6 +118,10 @@
         width: 30%; /* for the association img */
         border-radius: 15px;
         margin-top: 20px;
+    }
+
+    .trail-title {
+       border-top: none !important;
     }
 
     table {
