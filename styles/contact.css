@@ -17,25 +17,25 @@
             width: 52px;
             padding: 2px;
         }
-    }
 
-    figure { /* the grey box */
-        width: 50%;
-        text-align: center;
-        background-color: var(--theme-color-2);
-        padding: 15px;
-        border-radius: 15px;
+        & figure { /* the grey box */
+            width: 50%;
+            text-align: center;
+            background-color: var(--theme-color-2);
+            padding: 15px;
+            border-radius: 15px;
 
-        &>img {
-            width: 150px;
+            &>img {
+                width: 150px;
+            }
+
+            & figcaption {
+                font-weight: bold;
+            }
         }
     }
 
-    figcaption {
-        font-weight: bold;
-    }
-
-    h3 {
+    &>h3 {
         font-size: 25px;
         border-top: 1px solid var(--theme-color-1);
         margin-top: 25px;
