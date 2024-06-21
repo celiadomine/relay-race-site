@@ -6,8 +6,10 @@ document.addEventListener("keydown", e => {
 });
 
 function scrollToTop() {
-    console.log("scrolling to top")
     window.scrollTo(0, 0);
+
+    // on mobile the main element is the scroll-container (not body)
+    document.getElementsByTagName("main")[0].scrollTo(0, 0);
 }
 
 // that it scrolls to top when you click on a label
