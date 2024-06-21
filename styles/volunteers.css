@@ -4,7 +4,7 @@
         margin: auto;
     }
 
-    a {
+    & a {
         display: inline-block;
         color: #000;
         background-color: var(--theme-color-3);
@@ -16,8 +16,8 @@
         margin-top: 20px;
         transition: all 0.08s ease-in-out;
     }
-    
-    a:hover {
+
+    & a:hover {
         box-shadow: 0 0 0 #a45d31;
         transform: translateY(3px);
         cursor: pointer;
