@@ -96,6 +96,7 @@ input[name="navigation"]:not(:checked)+* {
 :has(#sponsors-screen:checked) nav>[for="sponsors-screen"],
 :has(#volunteers-screen:checked) nav>[for="volunteers-screen"],
 :has(#results-screen:checked) nav>[for="results-screen"],
+:has(#photos-screen:checked) nav>[for="photos-screen"],
 :has(#contact-screen:checked) nav>[for="contact-screen"],
 :has(#information-screen:checked) nav>[for="information-screen"],
 :has(#registration-screen:checked) nav>[for="registration-screen"]{
