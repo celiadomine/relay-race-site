@@ -4,37 +4,34 @@
         margin: auto;
     }
 
-    div {
+    &>div {
         display: flex;
         justify-content: space-between;
-    }
 
-    a {
-        color: #000;
-        background-color: var(--theme-color-3);
-        border: none;
-        border-radius: 55px;
-        padding: 7.5px 15px;
-        font-size: 25px;
-        box-shadow: 0 5px 0 #a45d31;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        transition: all 0.08s ease-in-out;
-        max-width: 300px;
+        &>a {
+            color: #000;
+            background-color: var(--theme-color-3);
+            border: none;
+            border-radius: 55px;
+            padding: 7.5px 15px;
+            font-size: 25px;
+            box-shadow: 0 5px 0 #a45d31;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            transition: all 0.08s ease-in-out;
+            max-width: 300px;
 
-        &:hover {
-            box-shadow: 0 0 0 #0000;
-            transform: translateY(3px);
-            cursor: pointer;
+            &:hover {
+                box-shadow: 0 0 0 #0000;
+                transform: translateY(3px);
+                cursor: pointer;
+            }
         }
     }
 
-    p a:last-of-type {
-        background-color: unset;
-        box-shadow: unset;
-        margin: unset;
-        padding: unset;
-        font-size: unset;
+
+    &>p>a {
+        text-decoration: underline;
     }
 
 }
