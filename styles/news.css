@@ -63,7 +63,7 @@
         padding: 5px 15px;
         border-radius: 25px;
         text-align: center;
-        color: #000;
+        color: var(--theme-color-5);
         background-color: var(--theme-color-3);
         box-shadow: 0 3px 0 #a45d31;
         transition: all 0.08s ease-in-out; /* that the box shadow diappears slowly*/

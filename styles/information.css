@@ -13,7 +13,7 @@
         font-size: 20px;
         padding: 10px;
         background-color: var(--theme-color-2);
-        border: 1px solid #000;
+        border: 1px solid var(--theme-color-5);
         border-bottom: 0;
         list-style: none;
         gap: 20px;
@@ -47,14 +47,14 @@
 
         &[open] {
             &>p {
-                border-top: 1px solid #000;
+                border-top: 1px solid var(--theme-color-5);
             }
 
             &>div {
                 overflow-x: auto; /* to scroll through the table in mobile */
                 padding: 20px;
-                border: 1px solid #000;
-                border-top: 1px solid #000;
+                border: 1px solid var(--theme-color-5);
+                border-top: 1px solid var(--theme-color-5);
                 border-bottom: none;
             }
         }
@@ -72,7 +72,7 @@
 
         &:last-of-type {
             &>summary, p { /* to have round borders */
-                border-bottom: 1px solid #000;
+                border-bottom: 1px solid var(--theme-color-5);
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
             }
@@ -89,8 +89,8 @@
     }
 
     & p {
-        border-right: 1px solid #000;
-        border-left: 1px solid #000;
+        border-right: 1px solid var(--theme-color-5);
+        border-left: 1px solid var(--theme-color-5);
         padding: 10px;
     }
 
@@ -99,7 +99,7 @@
         grid-template-columns: 1fr 1fr;
         list-style-type: none;
         padding: 10px;
-        border: 1px solid #000;
+        border: 1px solid var(--theme-color-5);
         border-bottom: none;
         border-top: none;
     }
