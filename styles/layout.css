@@ -106,7 +106,7 @@ input[name="navigation"]:not(:checked)+* {
 }
 
 
-@media (width <= 966px) {
+@media (width <= 1050px) {
     header{
         &>label {
             display: none;

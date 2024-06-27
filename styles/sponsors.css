@@ -33,7 +33,7 @@
     }
 }
 
-@media (width <= 700px) {
+@media (width <= 850px) {
     #sponsors-screen+* {
         & div {
             display: grid;

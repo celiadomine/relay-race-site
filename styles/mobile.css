@@ -1,5 +1,5 @@
 /* the main styling for mobile */
-@media (width <= 700px) {
+@media (width <= 850px) {
     body {
         height: 100svh;
         display: grid;

@@ -43,7 +43,7 @@
     }
 }
 
-@media (width <= 700px) {
+@media (width <= 850px) {
     #contact-screen+* {
         &>div {
             gap: 2px;
