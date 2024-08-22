@@ -18,13 +18,22 @@
             box-shadow: 0 5px 0 #a45d31;
             margin-top: 10px;
             margin-bottom: 50px;
+            max-width: 400px;
             transition: all 0.08s ease-in-out;
-            max-width: 300px;
 
             &:hover {
                 box-shadow: 0 0 0 #0000;
                 transform: translateY(3px);
                 cursor: pointer;
+            }
+        }
+
+        &.grid {
+            flex-direction: column;
+            margin-top: 60px;
+
+            &>a {
+                margin-top: 25px;
             }
         }
     }
@@ -33,13 +42,16 @@
     &>p>a {
         text-decoration: underline;
     }
-
 }
 
 @media (width <= 850px) {
     #registration-screen+* {
         & div {
             flex-direction: column;
+         
+            &.grid {
+                margin-top: 35px;
+            }
         }
 
         & a {
