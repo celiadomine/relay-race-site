@@ -41,6 +41,10 @@
         margin-top: 25px;
         padding-top: 15px;
     }
+
+    &>h2 {
+        margin-top: 25px;
+    }
 }
 
 @media (width <= 850px) {
